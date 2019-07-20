@@ -53,7 +53,9 @@ C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\EntityFramework.Sql
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\mvc-entity.Domain.dll
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\mvc-entity.Repos.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Newtonsoft.Json.dll
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Helpers.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Mvc.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Optimization.dll
@@ -61,10 +63,16 @@ C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Razor.dl
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages.Deployment.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages.Razor.dll
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Unity.Abstractions.dll
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Unity.Container.dll
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Unity.Mvc5.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\WebGrease.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\mvc-entity.Domain.pdb
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\mvc-entity.Repos.pdb
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\mvc-entity.Repos.dll.config
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\EntityFramework.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\EntityFramework.SqlServer.xml
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Helpers.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Mvc.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.Optimization.xml
@@ -73,6 +81,8 @@ C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages.Deployment.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\System.Web.WebPages.Razor.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Newtonsoft.Json.xml
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Unity.Abstractions.pdb
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Unity.Container.pdb
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Antlr3.Runtime.pdb
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\pt-br\System.Web.Helpers.resources.dll
@@ -83,8 +93,6 @@ C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\pt-br\System.Web.We
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\bin\pt-br\System.Web.WebPages.Razor.resources.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc-entity.csprojAssemblyReference.cache
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc_entity.Migrations.v1.resources
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc-entity.csproj.GenerateResource.cache
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc-entity.csproj.CoreCompileInputs.cache
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc-entity.csproj.CopyComplete
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity\obj\Debug\mvc-entity.dll
