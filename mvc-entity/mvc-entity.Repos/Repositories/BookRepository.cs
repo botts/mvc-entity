@@ -79,7 +79,7 @@ namespace mvc_entity.Repos.Repositories
                 return true;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

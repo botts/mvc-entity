@@ -1,7 +1,15 @@
-﻿
+﻿@model mvc_entity.ViewModels.EditorBookViewModel
 @{
-    ViewBag.Title = "Update";
+    ViewBag.Title = "Updating a book...";
 }
 
-<h2>Update</h2>
+<h2>UpdateBook</h2>
 
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.Id)
+
+    @Html.Partial("Partials/EditorBookPartial", Model)
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

@@ -40,7 +40,7 @@ namespace mvc_entity.Controllers
         }
 
         [HttpPost]
-        [Route("list")]
+        [Route("create")]
         public ActionResult Create(Book book)
         {
             if (_bookRepository.Create(book))
@@ -53,7 +53,16 @@ namespace mvc_entity.Controllers
         public ActionResult Update(int id)
         {
             var book = _bookRepository.Get(id);
-            return View(book);
+            var categorias = _categoriaRepository.Get();
+            var model = new EditorBookViewModel
+            {
+                Nome = book.Nome,
+                ISBN = book.ISBN,
+                CategoriaId = book.CategoriaId,
+                CategoriaOpcoes = new SelectList(categorias, "Id", "Nome")
+            };
+
+            return View(model);
         }
 
         [HttpPost]
