@@ -1,6 +1,7 @@
 ﻿using mvc_entity.Domain;
 using mvc_entity.Repos.Repositories;
 using mvc_entity.Repos.Repositories.Contracts;
+using mvc_entity.ViewModels;
 using System.Web.Mvc;
 
 namespace mvc_entity.Controllers
@@ -9,10 +10,12 @@ namespace mvc_entity.Controllers
     public class BookController : Controller
     {
         private IBookRepository _bookRepository;
+        private ICategoryRepository _categoriaRepository;
 
-        public BookController(IBookRepository repository)
+        public BookController(IBookRepository bookRepository, ICategoryRepository categoryRepository)
         {
-            _bookRepository = repository;
+            _bookRepository = bookRepository;
+            _categoriaRepository = categoryRepository;
         }
 
         [Route("list")]
@@ -26,7 +29,14 @@ namespace mvc_entity.Controllers
         [Route("create")]
         public ActionResult Create()
         {
-            return View();
+            var categorias = _categoriaRepository.Get();
+            var model = new CreateBookViewModel {
+                Nome = "",
+                ISBN = "",
+                CategoriaId = 0,
+                CategoriaOpcoes = new SelectList(categorias, "Id", "Nome")
+            };
+            return View(model);
         }
 
         [HttpPost]

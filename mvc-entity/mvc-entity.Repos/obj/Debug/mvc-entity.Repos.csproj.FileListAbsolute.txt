@@ -8,9 +8,9 @@ C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\bin\Debug\mvc-ent
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\bin\Debug\EntityFramework.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.csprojAssemblyReference.cache
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc_entity.Repos.Migrations.v1.resources
+C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.csproj.GenerateResource.cache
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.csproj.CoreCompileInputs.cache
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.csproj.CopyComplete
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.dll
 C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.pdb
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc_entity.Repos.Migrations.v1.resources
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Repos\obj\Debug\mvc-entity.Repos.csproj.GenerateResource.cache

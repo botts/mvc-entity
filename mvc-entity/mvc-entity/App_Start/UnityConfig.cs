@@ -21,6 +21,7 @@ namespace mvc_entity
             container.RegisterType<BookStoreDataContext, BookStoreDataContext>();
             container.RegisterType<IAuthorRepository, AuthorRepository>();
             container.RegisterType<IBookRepository, BookRepository>();
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
