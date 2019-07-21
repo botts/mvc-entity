@@ -30,7 +30,7 @@ namespace mvc_entity.Controllers
         public ActionResult Create()
         {
             var categorias = _categoriaRepository.Get();
-            var model = new CreateBookViewModel {
+            var model = new EditorBookViewModel {
                 Nome = "",
                 ISBN = "",
                 CategoriaId = 0,

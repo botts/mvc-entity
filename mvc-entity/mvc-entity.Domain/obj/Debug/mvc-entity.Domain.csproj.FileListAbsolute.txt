@@ -1,5 +1,0 @@
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Domain\bin\Debug\mvc-entity.Domain.dll
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Domain\bin\Debug\mvc-entity.Domain.pdb
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Domain\obj\Debug\mvc-entity.Domain.csproj.CoreCompileInputs.cache
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Domain\obj\Debug\mvc-entity.Domain.dll
-C:\Users\lucas.botaro\source\repos\mvc-entity\mvc-entity.Domain\obj\Debug\mvc-entity.Domain.pdb

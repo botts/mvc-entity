@@ -1,11 +1,11 @@
-﻿@model mvc_entity.ViewModels.CreateBookViewModel
+﻿@model mvc_entity.ViewModels.EditorBookViewModel
 @{
     ViewBag.Title = "Create";
 }
 
 <h2>Novo Livro</h2>
 
-<form>
+@using (Html.BeginForm("Create", "Book")) { 
     <div class="form-group">
         @Html.LabelFor(model => model.Nome)
         @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", placeholder = "Digite o nome do livro" } })
@@ -23,4 +23,4 @@
         @Html.DropDownListFor(m => m.CategoriaId, Model.CategoriaOpcoes, "Selecione uma opcao...", new { htmlAttributes = new { @class = "form-control"} })
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+}
