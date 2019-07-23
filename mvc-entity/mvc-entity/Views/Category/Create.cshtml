@@ -1,0 +1,17 @@
+﻿@model mvc_entity.ViewModels.EditorCategoryViewModel
+@{
+    ViewBag.Title = "Create Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (@Html.BeginForm("Create", "Category", FormMethod.Post))
+{
+    @Html.Partial("Partials/EditorCategoryPartial", Model)
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+}
+
+@section TituloPagina {
+    <h3>Create Category</h3>
+    @Html.ActionLink("Voltar", "Index", "Category")
+}

@@ -3,8 +3,6 @@
     ViewBag.Title = "Updating a book...";
 }
 
-<h2>UpdateBook</h2>
-
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.Id)
@@ -12,4 +10,11 @@
     @Html.Partial("Partials/EditorBookPartial", Model)
 
     <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+@section TituloPagina {
+    <div>
+        <h3>Update Book</h3>
+        @Html.ActionLink("Voltar", "Index", "Book")
+    </div>
 }

@@ -41,12 +41,34 @@ namespace mvc_entity.Controllers
 
         [HttpPost]
         [Route("create")]
-        public ActionResult Create(Book book)
+        public ActionResult Create(EditorBookViewModel model)
         {
-            if (_bookRepository.Create(book))
-                return RedirectToAction("Index");
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("ErrorMessage", "Objeto invalido");
+                var categoriasRetorno = _categoriaRepository.Get();
+                model.CategoriaOpcoes = new SelectList(categoriasRetorno, "Id", "Nome");
+                return View(model);
+            }
+            else
+            {
+                Book book = new Book {
+                    Nome = model.Nome,
+                    CategoriaId = model.CategoriaId,
+                    DataLancamento = model.DataLancamento,
+                    ISBN = model.ISBN,
+                };
 
-            return View(book);
+                if (_bookRepository.Create(book))
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ModelState.AddModelError("ErrorMessage", "Erro");
+                    return View(model);
+                }
+            }
         }
 
         [Route("update/{id:int}")]

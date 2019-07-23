@@ -1,7 +1,17 @@
-﻿
+﻿@model IEnumerable<mvc_entity.Domain.Author>
+
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Authors List";
 }
 
-<h2>Index</h2>
 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@Html.Partial("Partials/AuthorListPartial", Model)
+
+@section TituloPagina {
+    <h3>Authors List</h3>
+}

@@ -3,6 +3,7 @@ using mvc_entity.Repos.Repositories.Contracts;
 using mvc_entity.Repos.Repositories;
 using System.Web.Mvc;
 using mvc_entity.Domain;
+using mvc_entity.ViewModels;
 
 namespace mvc_entity.Controllers
 {
@@ -11,10 +12,12 @@ namespace mvc_entity.Controllers
     public class AuthorController : Controller
     {
         private IAuthorRepository _authorRepository;
+        private IBookRepository _bookRepository;
 
-        public AuthorController(IAuthorRepository repository)
+        public AuthorController(IAuthorRepository authorRepository, IBookRepository bookRepository)
         {
-            _authorRepository = repository;
+            _authorRepository = authorRepository;
+            _bookRepository = bookRepository;
         }
 
         [Route("list")]
@@ -29,7 +32,14 @@ namespace mvc_entity.Controllers
         [Route("create")]
         public ActionResult Create()
         {
-            return View();
+            var books = _bookRepository.Get();
+            var model = new EditorAuthorViewModel
+            {
+                Nome = "",
+                LivrosOpcoes = new SelectList(books, "Id", "Nome")
+            };
+
+            return View(model);
         }
 
         [HttpPost]
@@ -46,7 +56,15 @@ namespace mvc_entity.Controllers
         public ActionResult Update(int id)
         {
             var author = _authorRepository.Get(id);
-            return View(author);
+            var book = _bookRepository.Get();
+
+            var model = new EditorAuthorViewModel
+            {
+                Nome = author.Nome,
+                LivrosOpcoes = new SelectList(book, "Id", "Nome")
+            };
+
+            return View(model);
         }
 
         [HttpPost]
