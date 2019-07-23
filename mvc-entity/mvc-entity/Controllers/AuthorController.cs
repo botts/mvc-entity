@@ -1,9 +1,10 @@
 ﻿using mvc_entity.Filters;
 using mvc_entity.Repos.Repositories.Contracts;
-using mvc_entity.Repos.Repositories;
 using System.Web.Mvc;
 using mvc_entity.Domain;
 using mvc_entity.ViewModels;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace mvc_entity.Controllers
 {
@@ -36,7 +37,7 @@ namespace mvc_entity.Controllers
             var model = new EditorAuthorViewModel
             {
                 Nome = "",
-                LivrosOpcoes = new SelectList(books, "Id", "Nome")
+                LivrosOpcoes = books
             };
 
             return View(model);
@@ -44,8 +45,24 @@ namespace mvc_entity.Controllers
 
         [HttpPost]
         [Route("create")]
-        public ActionResult Create(Author author)
+        public ActionResult Create(EditorAuthorViewModel authorViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(authorViewModel);
+            }
+
+
+            List<Book> books = new List<Book>();
+            books.Add(_bookRepository.Get(authorViewModel.SelectedBookId));
+
+            var author = new Author
+            {
+                Nome = authorViewModel.Nome,
+                Id = authorViewModel.Id,
+                Livros = books
+            };
+
             if (_authorRepository.Create(author))
                 return RedirectToAction("Index");
 
@@ -61,7 +78,7 @@ namespace mvc_entity.Controllers
             var model = new EditorAuthorViewModel
             {
                 Nome = author.Nome,
-                LivrosOpcoes = new SelectList(book, "Id", "Nome")
+                LivrosOpcoes = book
             };
 
             return View(model);
@@ -69,8 +86,23 @@ namespace mvc_entity.Controllers
 
         [HttpPost]
         [Route("update/{id:int}")]
-        public ActionResult Update(Author author)
+        public ActionResult Update(EditorAuthorViewModel authorViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(authorViewModel);
+            }
+
+            List<Book> books = new List<Book>();
+            books.Add(_bookRepository.Get(authorViewModel.SelectedBookId));
+
+            var author = new Author
+            {
+                Nome = authorViewModel.Nome,
+                Id = authorViewModel.Id,
+                Livros = books
+            };
+
             if (_authorRepository.Update(author))
                 return RedirectToAction("Index");
 
