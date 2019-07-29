@@ -57,6 +57,9 @@
       <DependentUpon>201907201910129_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AuthorRepository.cs" />
     <Compile Include="Repositories\BookRepository.cs" />
@@ -64,12 +67,6 @@
     <Compile Include="Repositories\Contracts\IAuthorRepository.cs" />
     <Compile Include="Repositories\Contracts\IBookRepository.cs" />
     <Compile Include="Repositories\Contracts\ICategoryRepository.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\mvc-entity.Domain\mvc-entity.Domain.csproj">
-      <Project>{94E49143-671F-4AF6-B283-0181F48A1843}</Project>
-      <Name>mvc-entity.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

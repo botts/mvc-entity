@@ -224,10 +224,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\mvc-entity.Domain\mvc-entity.Domain.csproj">
-      <Project>{94e49143-671f-4af6-b283-0181f48a1843}</Project>
-      <Name>mvc-entity.Domain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\mvc-entity.Repos\mvc-entity.Repos.csproj">
       <Project>{A7B0A836-E6B8-43AB-A081-209790DA842A}</Project>
       <Name>mvc-entity.Repos</Name>
